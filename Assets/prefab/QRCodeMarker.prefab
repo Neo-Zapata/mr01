@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1452257592468599512}
   - component: {fileID: 2749371770393853353}
   m_Layer: 0
-  m_Name: QRCodeMaker
+  m_Name: QRCodeMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
