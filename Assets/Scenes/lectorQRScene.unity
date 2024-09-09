@@ -336,6 +336,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4201881340b2ef34496b711e89003a25, type: 3}
+--- !u!1001 &689105552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.52775884
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.76418424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.33618164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452257592468599512, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600210377681378702, guid: f412cb68330d472478019e9e262165d0, type: 3}
+      propertyPath: m_Name
+      value: QRCodeMarker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f412cb68330d472478019e9e262165d0, type: 3}
 --- !u!1001 &911134629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -812,3 +869,4 @@ SceneRoots:
   - {fileID: 92567490}
   - {fileID: 5139996339329466720}
   - {fileID: 129970113}
+  - {fileID: 689105552}
