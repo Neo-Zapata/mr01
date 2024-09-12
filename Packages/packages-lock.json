@@ -275,7 +275,7 @@
       }
     },
     "org.mixedrealitytoolkit.audio": {
-      "version": "file:MixedReality/org.mixedrealitytoolkit.audio-3.0.3.tgz",
+      "version": "file:MixedReality/org.mixedrealitytoolkit.audio-3.0.4.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -302,7 +302,7 @@
       }
     },
     "org.mixedrealitytoolkit.extendedassets": {
-      "version": "file:MixedReality/org.mixedrealitytoolkit.extendedassets-3.0.2.tgz",
+      "version": "file:MixedReality/org.mixedrealitytoolkit.extendedassets-3.0.3.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -343,7 +343,7 @@
       }
     },
     "org.mixedrealitytoolkit.tools": {
-      "version": "file:MixedReality/org.mixedrealitytoolkit.tools-3.0.3.tgz",
+      "version": "file:MixedReality/org.mixedrealitytoolkit.tools-3.0.4.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
