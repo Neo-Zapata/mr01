@@ -14,6 +14,9 @@ public class TestQRCodeDetection : MonoBehaviour
     private bool spaceFlag = true;
     private void Start()
     {
+        cubodemo.SetActive(false);
+        cubodemo.gameObject.SetActive(false);
+        Debug.Log("***Object setActive(false)");
         if (markerManager == null)
         {
             Debug.LogError("***ARMarkerManager no está asignado.");
@@ -31,23 +34,23 @@ public class TestQRCodeDetection : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        // Check if the space key is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("***Space key pressed. Triggering update function.");
+    // // Update is called once per frame
+    // private void Update()
+    // {
+    //     // Check if the space key is pressed
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         Debug.Log("***Space key pressed. Triggering update function.");
 
-            if(spaceFlag){
-                cubodemo.SetActive(true);
-                spaceFlag = false;
-            } else {
-                cubodemo.SetActive(false);
-                spaceFlag = true;
-            }
-        }
-    }
+    //         if(spaceFlag){
+    //             cubodemo.SetActive(true);
+    //             spaceFlag = false;
+    //         } else {
+    //             cubodemo.SetActive(false);
+    //             spaceFlag = true;
+    //         }
+    //     }
+    // }
 
     /// <summary>
     /// Maneja el evento markersChanged y procesa los marcadores agregados, actualizados y eliminados.
@@ -84,8 +87,12 @@ public class TestQRCodeDetection : MonoBehaviour
 
         if(qrCodeString == targetQRCodeText){
             cubodemo.SetActive(true);
+            cubodemo.gameObject.SetActive(true);
+            Debug.Log($"*** Codigo QR setActive(true) in add handler - {addedMarker.trackableId}");
         } else {
            cubodemo.SetActive(false);
+            cubodemo.gameObject.SetActive(false);
+            Debug.Log($"*** Codigo QR setActive(false) in add handler - {addedMarker.trackableId}");
         }
         
         if (cubodemo != null)
@@ -126,11 +133,15 @@ public class TestQRCodeDetection : MonoBehaviour
         boundsControl = null;
         // Obtiene la cadena decodificada del marcador agregado
         string qrCodeString = updatedMarker.GetDecodedString();
-
+        
         if(qrCodeString == targetQRCodeText){
             cubodemo.SetActive(true);
+            cubodemo.gameObject.SetActive(true);
+            Debug.Log($"*** Codigo QR setActive(true) in update handler - {updatedMarker}");
         } else {
            cubodemo.SetActive(false);
+            cubodemo.gameObject.SetActive(false);
+            Debug.Log($"*** Codigo QR setActive(false) in update handler - {updatedMarker}");
         }
         
         // Establece la cadena del código QR en el componente TextMeshPro
